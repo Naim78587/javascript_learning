@@ -1,3 +1,4 @@
+/*
 //printing in JS
 console.log("I am learning JS");
 document.write("Name: Naim Ahmed <br>");
@@ -38,5 +39,6 @@ var m1="Java Script ";
 var m2="is beautiful";
 document.write(m1.concat(m2));
 document.write(m1.slice(0,4));
-
+*/
+//Arithmetic and assignment operator
 
