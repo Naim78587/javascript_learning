@@ -1,0 +1,12 @@
+.para-style{
+    color:red;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.heading-style{
+    color: tomato;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
