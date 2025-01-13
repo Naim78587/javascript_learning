@@ -77,6 +77,10 @@ for(var i=0;i<=2;i++){
     });
 }
 
+document.addEventListener("keypress",function(event){
+    var text=event.key;
+    playAnimation(text)
+});
 
 
 for(var i=0;i<=2;i++){
@@ -93,3 +97,10 @@ function playAnimation(text){
         button.classList.remove("anim");
     },1000);
 }
+
+
+//keybad paragraph
+document.addEventListener("keypress",function(event){
+    var text=event.key;
+    document.querySelector(".p").innerHTML="You have pressed: "+text;
+});
