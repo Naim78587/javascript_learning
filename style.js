@@ -54,3 +54,42 @@ a.addEventListener("click",function(){
     document.querySelector(".para").innerHTML= text+" Is clicked";
 });
 }
+
+for(var i=0;i<=2;i++){
+    document.querySelectorAll(".audiobtn")[i].addEventListener("click",function (){
+        var text=this.innerHTML.toLowerCase();
+        switch(text){
+            case "a":
+                var audio=new Audio("audio/a.mp3");
+                audio.play();
+                break;
+
+            case "b":
+                var audio=new Audio("audio/b.mp3");
+                audio.play();
+                break;
+
+            case "c":
+                var audio=new Audio("audio/c.mp3");
+                audio.play();
+                break;
+        }
+    });
+}
+
+
+
+for(var i=0;i<=2;i++){
+    document.querySelectorAll(".animation")[i].addEventListener("click",function (){
+        var text=this.classList[1];
+        playAnimation(text);
+    });
+}
+function playAnimation(text){
+    var button=document.querySelector("."+text);
+    button.classList.add("anim");
+
+    setTimeout(function(){
+        button.classList.remove("anim");
+    },1000);
+}
